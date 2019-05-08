@@ -234,6 +234,10 @@ PRODUCT_COPY_FILES += \
 # PRODUCT_PACKAGES += \
 #     DeviceSettings
 
+# DeviceExtras Package
+PRODUCT_PACKAGES += \
+    DeviceExtras
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
