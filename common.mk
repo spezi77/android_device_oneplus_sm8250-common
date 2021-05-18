@@ -403,7 +403,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    device/oneplus/common
+    device/oneplus/sm8250-common
 
 # Telephony
 PRODUCT_PACKAGES += \
