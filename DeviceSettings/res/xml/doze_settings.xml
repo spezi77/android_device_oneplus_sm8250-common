@@ -15,9 +15,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/org.arrow.device.DeviceSettings">
 
-    <com.arrow.support.preferences.SwitchPreference
+    <org.arrow.device.DeviceSettings.SwitchPreference
         android:key="always_on_display"
         android:disableDependentsState="true"
         android:icon="@drawable/ic_eye"
@@ -42,8 +43,7 @@
     <PreferenceCategory
         android:key="proximity_sensor"
         android:title="@string/proximity_sensor_title">
-
-        <com.arrow.support.preferences.SwitchPreference
+        <org.arrow.device.DeviceSettings.SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
             android:icon="@drawable/ic_pocket"

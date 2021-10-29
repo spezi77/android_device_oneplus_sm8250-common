@@ -39,7 +39,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
-import com.arrow.support.preferences.SwitchPreference;
+import org.arrow.device.DeviceSettings.SwitchPreference;
 
 import org.arrow.device.DeviceSettings.R;
 

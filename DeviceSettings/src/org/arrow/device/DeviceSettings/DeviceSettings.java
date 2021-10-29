@@ -47,8 +47,8 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
-import com.arrow.support.preferences.CustomSeekBarPreference;
-import com.arrow.support.preferences.SwitchPreference;
+import org.arrow.device.DeviceSettings.CustomSeekBarPreference;
+import org.arrow.device.DeviceSettings.SwitchPreference;
 
 import org.arrow.device.DeviceSettings.FileUtils;
 import org.arrow.device.DeviceSettings.Doze.DozeSettingsActivity;

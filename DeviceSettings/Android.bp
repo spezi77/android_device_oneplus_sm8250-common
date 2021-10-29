@@ -32,7 +32,6 @@ android_app {
         "androidx.core_core",
         "androidx.preference_preference",
         "org.lineageos.settings.resources",
-        "VendorSupport-preference",
         "vendor.oneplus.hardware.camera-V1.0-java",
     ],
 
