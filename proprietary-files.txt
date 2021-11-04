@@ -351,7 +351,7 @@ odm/etc/media_codecs_dolby_audio.xml:vendor/etc/media_codecs_dolby_audio.xml
 product/etc/permissions/com.dolby.daxservice.xml
 system/lib64/vendor.dolby.hardware.dms@2.0.so
 -system_ext/app/OPOnlineConfig/OPOnlineConfig.apk
--system_ext/app/OPSoundTuner/OPSoundTuner.apk
+-system_ext/app/OPSoundTuner/OPSoundTuner.apk|39380fbaf336406872f873b1085b173e0715a05a
 system_ext/etc/permissions/com.oneplus.software.xml
 system_ext/etc/permissions/privapp-permissions-oem-system_ext.xml
 -system_ext/priv-app/daxService/daxService.apk
