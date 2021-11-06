@@ -1,0 +1,5 @@
+dex_import {
+        name: "WfdCommon",
+        owner: "oneplus",
+        jars: ["WfdCommon.jar"],
+}
