@@ -113,8 +113,8 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
 # Atrace
-PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service
+#PRODUCT_PACKAGES += \
+    #android.hardware.atrace@1.0-service
 
 # Audio
 PRODUCT_PACKAGES += \
