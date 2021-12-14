@@ -34,7 +34,7 @@ public class Startup extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent bootintent) {
 
         boolean enabled = false;
-		TouchscreenGestureSettings.MainSettingsFragment.restoreTouchscreenGestureStates(context);
+		TouchscreenGestureFragment.restoreTouchscreenGestureStates(context);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_HBM_SWITCH, false);
         if (enabled) {
@@ -64,7 +64,6 @@ public class Startup extends BroadcastReceiver {
     }
 
 
-import org.arrow.device.DeviceSettings.TouchscreenGestureSettings;
 
     private static final String TAG = "BootReceiver";
     private static final String ONE_TIME_TUNABLE_RESTORE = "hardware_tunable_restored";

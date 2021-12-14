@@ -48,7 +48,7 @@
             android:defaultToDeviceProtectedStorage="true"
             android:directBootAware="true"
             android:enabled="true">
-            <intent-filter android:priority="100" >
+            <intent-filter android:priority="500" >
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
@@ -121,12 +121,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".TouchscreenGestureSettings"
-            android:label="@string/touchscreen_gesture_settings_title"
-            android:theme="@style/AppTheme">
-        </activity>
-	
+
         <!-- Doze Service -->
 		<service android:name=".Doze.DozeService"
                  android:permission="OneplusDozeService">
@@ -143,6 +138,15 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
+        <activity
+            android:name="org.arrow.device.DeviceSettings.TouchscreenGestureActivity"
+            android:exported="true"
+            android:label="@string/touchscreen_gesture_settings_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter> 
+        </activity>
 
         <!-- HBM Service -->
         <service android:name=".HBMModeService"
