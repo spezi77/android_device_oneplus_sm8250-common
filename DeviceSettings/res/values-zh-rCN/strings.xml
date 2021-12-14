@@ -71,6 +71,7 @@
     <string name="touchscreen_gesture_action_volume_down">降低媒体音量</string>
     <string name="touchscreen_gesture_action_volume_up">提高媒体音量</string>
     <string name="touchscreen_gesture_action_ambient_display">环境显示</string>
+    <string name="touchscreen_gesture_action_wake_device">唤醒设备</string>
     <!-- Dolby -->
     <string name="dolby_category">音频</string>
     <string name="enable_dolby_title">杜比全景声</string>
