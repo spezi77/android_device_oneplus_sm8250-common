@@ -18,18 +18,16 @@
 	android.title="@string/device_title">
     <PreferenceCategory
         android:key="slider"
-        android:title="@string/slider_title">
-     	 <org.arrow.device.DeviceSettings.SwitchPreference
-            android:key="mute_media"
-            android:icon="@drawable/ic_audio_media"
-            android:title="@string/mute_media_title"
-            android:summary="@string/mute_media_summary"
-            android:persistent="true" />
-    </PreferenceCategory>
+        android:title="@string/notification_slider_category_title">
 
-    <PreferenceCategory
-        android:key="graphics"
-        android:title="@string/display_title">
+        <ListPreference
+            android:key="slider_usage"
+            android:icon="@drawable/ic_slider"
+            android:dialogTitle="@string/notification_slider_usage_title"
+            android:title="@string/notification_slider_usage_title"
+            android:entries="@array/notification_slider_usage_entries"
+            android:entryValues="@array/notification_slider_usage_entry_values"
+            android:summary="%s" />
 
         <org.arrow.device.DeviceSettings.SwitchPreference
             android:key="auto_hbm"
