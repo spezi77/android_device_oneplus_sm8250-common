@@ -18,6 +18,8 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 RELAX_USES_LIBRARY_CHECK := true
 
 BOARD_VENDOR := oneplus
@@ -58,6 +60,7 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/sm8250
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig
 SELINUX_IGNORE_NEVERALLOWS := true
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := kona
@@ -186,6 +189,11 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
+# Sources
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8250/media
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8250/display
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8250/audio
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
